@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9ee7ff;
+    background-image: url("imagens/coqueiros.png");
+    background-repeat: repeat;
+    background-size: 220px;
+    color: #333;
+    text-align: center;
+}
+
+
+/* Cabeçalho */
+
+header {
+    background: linear-gradient(90deg, #00b894, #00cec9, #0984e3);
+    color: white;
+    padding: 35px;
+    text-shadow: 2px 2px 5px #444;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 22px;
+}
+
+
+/* Navegação */
+
+nav {
+    background-color: #005f73;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd60a;
+}
+
+
+/* Conteúdo */
+
+section {
+
+    background-color: rgba(255,255,255,0.93);
+    width: 85%;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+
+    animation: aparecer 1s;
+}
+
+
+h2 {
+    color: #0077b6;
+    font-size: 32px;
+    margin: 25px;
+}
+
+
+h3 {
+    color: #ff8500;
+    font-size: 26px;
+    margin: 20px;
+}
+
+
+p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 20px;
+}
+
+
+/* Galeria de imagens */
+
+.galeria {
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+}
+
+
+.galeria img {
+
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+
+    border-radius: 20px;
+    border: 5px solid #00b4d8;
+
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+
+    transition: 0.4s;
+
+}
+
+
+.galeria img:hover {
+
+    transform: scale(1.08);
+
+}
+
+
+/* Lista de destinos */
+
+ul {
+
+    list-style: none;
+    margin: 25px;
+
+}
+
+
+li {
+
+    background: linear-gradient(90deg,#caf0f8,#ade8f4);
+
+    margin: 15px;
+
+    padding: 15px;
+
+    border-radius: 20px;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+
+}
+
+
+/* Botão */
+
+.botao {
+
+    display: inline-block;
+
+    background: linear-gradient(45deg,#ff9f1c,#ffbf00);
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    box-shadow:0 5px 12px rgba(0,0,0,0.3);
+
+    transition:0.3s;
+
+}
+
+
+.botao:hover {
+
+    transform:scale(1.1);
+
+    background:#ff8500;
+
+}
+
+
+/* Rodapé */
+
+footer {
+
+    background:#005f73;
+
+    color:white;
+
+    padding:20px;
+
+    font-size:18px;
+
+}
+
+
+/* Animação */
+
+@keyframes aparecer {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
